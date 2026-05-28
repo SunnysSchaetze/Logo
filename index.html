@@ -2,32 +2,98 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Logo</title>
+    <title>Animiertes Logo – Sunny's Schätze</title>
+
     <style>
         html, body {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
+            background: black;
         }
+
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
+            color: white;
+            font-family: sans-serif;
         }
+
         video {
             width: 100%;
             height: 100%;
             object-fit: contain;
-            display: block;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        figcaption {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            right: 1rem;
+            background: rgba(0,0,0,0.6);
+            padding: 1rem;
+            border-radius: 0.5rem;
         }
     </style>
 </head>
+
 <body>
-    <video autoplay muted loop playsinline>
+
+<figure>
+
+    <p class="sr-only" id="logo-short">
+        Animiertes Logo von Sunny's Schätze mit Drachen und Gaming-Thema.
+    </p>
+
+    <video
+        autoplay
+        muted
+        loop
+        playsinline
+        aria-labelledby="logo-title logo-short"
+        aria-describedby="logo-details"
+        poster="logo-poster.jpg"
+        aria-label="Animiertes Logo von Sunny's Schätze"
+    >
         <source src="Sunnys Schätze Logo Animiert.mp4" type="video/mp4">
-        Dein Browser unterstützt dieses Animierte Logo nicht.
+        Dein Browser unterstützt das Video nicht.
     </video>
+
+    <figcaption>
+        <h1 id="logo-title">Sunny's Schätze</h1>
+
+        <p id="logo-details">
+            Das Logo zeigt einen Drachen auf einer Schatztruhe mit Gaming- und Sammelobjekten.
+            Sterne, Sternschnuppen und ein leuchtender RGB-Hintergrund erzeugen eine fantasievolle Szene.
+        </p>
+
+        <details>
+            <summary>Mehr Details zur Animation</summary>
+            <p>
+                Der Drache sitzt auf der Truhe und nutzt ein Handheld-Spielgerät.
+                Um ihn herum befinden sich Videospiele, Brettspiele und elektronische Geräte.
+                Figuren winken freundlich, während der Hintergrund Sterne und Wolken zeigt.
+                Am Ende fliegt der Drache davon und hinterlässt einen Feuerwirbel.
+            </p>
+        </details>
+    </figcaption>
+
+</figure>
+
 </body>
 </html>
