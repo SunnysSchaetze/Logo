@@ -8,36 +8,20 @@
         html, body {
             margin: 0;
             padding: 0;
-            width: 100%;
-            height: 100%;
             background: black;
         }
 
-        body {
+        .wrapper {
+            width: 100%;
             display: flex;
             justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1000px;
-            text-align: center;
-            color: white;
-            font-family: sans-serif;
         }
 
         video {
             width: 100%;
+            max-width: 1000px;
             height: auto;
             display: block;
-        }
-
-        .description {
-            margin-bottom: 1rem;
-            font-size: 1rem;
-            line-height: 1.4;
         }
 
         .sr-only {
@@ -56,17 +40,10 @@
 
 <body>
 
-<div class="container">
+<div class="wrapper">
 
-    <!-- Screenreader-only Kurzbeschreibung -->
     <p class="sr-only">
-        Animiertes Logo von Sunny's Schätze mit Drachen und Gaming-Thema.
-    </p>
-
-    <!-- Sichtbare Beschreibung (steht IMMER vor dem Video in Google Sites sauber) -->
-    <p class="description">
-        Das animierte Logo zeigt einen Drachen auf einer Schatztruhe mit Gaming- und Sammelobjekten,
-        Sternen und einem leuchtenden RGB-Hintergrund.
+        Animiertes Logo von Sunny's Schätze mit Drachen, Gaming-Elementen und RGB-Hintergrund.
     </p>
 
     <video
