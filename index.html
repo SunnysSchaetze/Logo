@@ -2,66 +2,32 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Animiertes Logo – Sunny's Schätze</title>
-
+    <title>Logo</title>
     <style>
         html, body {
             margin: 0;
             padding: 0;
-            background: black;
-        }
-
-        .wrapper {
             width: 100%;
+            height: 100%;
+        }
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: black;
+            overflow: hidden;
         }
-
         video {
             width: 100%;
-            max-width: 1000px;
-            height: auto;
+            height: 100%;
+            object-fit: contain;
             display: block;
-            margin: 0;
-        }
-
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
         }
     </style>
 </head>
-
 <body>
-
-<div class="wrapper">
-
-    <p class="sr-only">
-        Animiertes Logo von Sunny's Schätze mit Drachen, Gaming-Elementen und RGB-Hintergrund.
-    </p>
-
-    <video
-        autoplay
-        muted
-        loop
-        playsinline
-        aria-label="Animiertes Logo von Sunny's Schätze"
-        poster="logo-poster.jpg"
-    >
+    <video autoplay muted loop playsinline>
         <source src="Sunnys Schätze Logo Animiert.mp4" type="video/mp4">
-        Dein Browser unterstützt das Video nicht.
+        Dein Browser unterstützt dieses Animierte Logo nicht.
     </video>
-
-</div>
-
 </body>
 </html>
